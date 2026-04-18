@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'tela_config.dart';
 
 void main() {
   runApp(const MyApp());
@@ -55,12 +56,12 @@ class _MainScreenState extends State<MainScreen> {
             currentIndex = index;
           });
         },
-        children: const [
+        children: [
           Center(child: Text("Guigs")),
           Center(child: Text("Luiza")), // corrigido espaço
-          StudyScreen(),
+          MenuDesafios(),
           Center(child: Text("David")),
-          Center(child: Text("Atualiza")),
+          TelaConfig(),
         ],
       ),
 
@@ -88,8 +89,8 @@ class _MainScreenState extends State<MainScreen> {
 
 //---------------------------------------------------------------------------------------------------------------------------------------------------------
 
-class StudyScreen extends StatelessWidget {
-  const StudyScreen({super.key});
+class MenuDesafios extends StatelessWidget {
+  const MenuDesafios({super.key});
 
   @override
   Widget build(BuildContext context) {
